@@ -42,6 +42,24 @@
                             <img class="call_arrow_right" src="img/Arrow_right.png" alt="">
                         </div>
                     </div>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p class="txt_application">Оставьте заявку</p>
+                            <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                            <div class="info_modal_window">
+                                <p class="txt_info_modal_window"> Имя</p>
+                                <input type="text" id="name" name="name" placeholder="Иван">
+                                <p class="txt_info_modal_window"> Телефон</p>
+                                <input type="text" id="phone" name="phone" placeholder="+7 (999) - 99 - 99">
+                                <p class="txt_info_modal_window"> E-mail</p>
+                                <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                                <p class="hint_for_application">* заполните хотя бы 1 поле</p>
+                            </div>
+                            <button class="submit-btn">Оставьте заявку</button>
+                        </div>
+                    </div>
+                    <script src="js/modal_window.js"></script>
                     <div class="phone_number">
                         <p class="text_phone_number">
                             +7 (999) 999 99 99 <br>
@@ -79,10 +97,10 @@
                         <img class="img_plug" src="img/Alt Arrow Down.svg" alt="">
                     </a>
                     <div class="dropdown_content">
-                        <a href="#">Ж/Д доставка</a>
-                        <a href="#">Авто доставка</a>
-                        <a href="#">Авиа доставка</a>
-                        <a href="#">Экспресс доставка</a>
+                        <a href="pages/ru/gd_delivery.html">Ж/Д доставка</a>
+                        <a href="pages/ru/auto_delivery.html">Авто доставка</a>
+                        <a href="pages/ru/avia_delivery.html">Авиа доставка</a>
+                        <a href="pages/ru/express_delivery.html">Экспресс доставка</a>
                         <a href="#">Доставка образцов</a>
                         <a href="#">Доставка спец грузов и техники</a>
                         <a href="#">Сборные грузы</a>
@@ -100,7 +118,7 @@
                         <img class="img_plug" src="img/Alt Arrow Down.svg" alt="">
                     </a>
                     <div class="dropdown_content">
-                        <a href="#">Выкуп малых и крупных партий</a> <!-- Добавлена ссылка 1 -->
+                        <a href="pages/ru/purchase_lots.html">Выкуп малых и крупных партий</a> <!-- Добавлена ссылка 1 -->
                         <a href="#">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
                         <a href="#">Проверка качества выкупленного товара</a> <!-- Добавлена ссылка 3 -->
                         <a href="#">Готовые решения (популярные товары)</a> <!-- Добавлена ссылка 1 -->
@@ -123,9 +141,7 @@
                         <a href="#">Консультации по доставке</a> <!-- Добавлена ссылка 1 -->
                         <a href="#">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
                         <a href="#">Возврат китайского НДС</a> <!-- Добавлена ссылка 3 -->
-                        <a href="#">Трекинг грузов</a> <!-- Добавлена ссылка 1 -->
                         <a href="#">Рассчитать стоимость</a> <!-- Добавлена ссылка 2 -->
-                        <a href="#">Доставка от склада в Москве до двери</a> <!-- Добавлена ссылка 3 -->
                     </div>
                 </div>
                 <div class="dropdown"> <!-- Добавлен блок для "О нас" -->
@@ -136,8 +152,8 @@
                     <div class="dropdown_content">
                         <a href="#">Контакты</a> <!-- Добавлена ссылка 1 -->
                         <a href="#">О компании</а> <!-- Добавлена ссылка 2 -->
-                        <a href="#">Вакансии</a> <!-- Добавлена ссылка 3 -->
-                        <a href="#">FAQ</a> <!-- Добавлена ссылка 3 -->
+                            <a href="#">Вакансии</a> <!-- Добавлена ссылка 3 -->
+                            <a href="#">FAQ</a> <!-- Добавлена ссылка 3 -->
                     </div>
                 </div>
             </div>
@@ -146,7 +162,7 @@
         <hr class="line_header">
         <div class="header_bottom"> <!--Настройка нижней части шапки сайта-->
             <div class="bottom_link">
-                <a id="bottom_link" href="">
+                <a id="bottom_link" href="pages/ru/express_delivery.html#container_calculator">
                     <p class="text_bottom_link">Рассчитать стоимость</p>
                 </a>
             </div>
@@ -186,7 +202,7 @@
         </div>
         <div class="link_naviagtions_service"> <!--Настройка ссылок для навигации по услугам-->
             <div class="block_navigations">
-                <a class="link_block_navigations" href="#">
+                <a class="link_block_navigations" href="pages/ru/express_delivery.html">
                     <img src="img/time.png" alt="" class="image_navigations_service">
                     <p class="text_navigations_service">Экспресс-доставка</p>
                 </a>
@@ -317,7 +333,7 @@
                 <p class="txt_block_to_work">
                     Рассчитайте стоимость
                 </p>
-                <a class="link_to_work_1" href="#">
+                <a class="link_to_work_1" href="pages/ru/express_delivery.html#container_calculator">
                     <p class="txt_link_to_work">Калькулятор</p>
                 </a>
             </div>
@@ -343,6 +359,24 @@
                     <p class="txt_link_to_work">Оставьте заявку</p>
                 </a>
             </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p class="txt_application">Оставьте заявку</p>
+                    <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                    <div class="info_modal_window">
+                        <p class="txt_info_modal_window"> Имя</p>
+                        <input type="text" id="name" name="name" placeholder="Иван">
+                        <p class="txt_info_modal_window"> Телефон</p>
+                        <input type="text" id="phone" name="phone" placeholder="+7 (999) - 99 - 99">
+                        <p class="txt_info_modal_window"> E-mail</p>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                        <p class="hint_for_application">* заполните хотя бы 1 поле</p>
+                    </div>
+                    <button class="submit-btn">Оставьте заявку</button>
+                </div>
+            </div>
+            <script src="js/modal_window_link_to_work.js"></script>
         </div>
         <div class="container_news">
             <div class="header_news">
@@ -516,22 +550,22 @@
                     <p class="name_block_footer">
                         Доставка
                     </p>
-                    <a class="link_content_footer" href="#">
+                    <a class="link_content_footer" href="pages/ru/gd_delivery.html">
                         <p class="text_block_footer">
                             Ж/Д доставка
                         </p>
                     </a>
-                    <a class="link_content_footer" href="#">
+                    <a class="link_content_footer" href="pages/ru/auto_delivery.html">
                         <p class="text_block_footer">
                             Авто доставка
                         </p>
                     </a>
-                    <a class="link_content_footer" href="#">
+                    <a class="link_content_footer" href="pages/ru/avia_delivery.html">
                         <p class="text_block_footer">
                             Авиа доставка
                         </p>
                     </a>
-                    <a class="link_content_footer" href="#">
+                    <a class="link_content_footer" href="pages/ru/express_delivery.html">
                         <p class="text_block_footer">
                             Экспресс доставка
                         </p>
@@ -571,7 +605,7 @@
                     <p class="name_block_footer">
                         Маркетплейсам
                     </p>
-                    <a class="link_content_footer" href="#">
+                    <a class="link_content_footer" href="pages/ru/purchase_lots.html">
                         <p class="text_block_footer">
                             Выкуп малых и крупных партий
                         </p>
@@ -653,17 +687,7 @@
                     </a>
                     <a class="link_content_footer" href="#">
                         <p class="text_block_footer">
-                            Трекинг грузов
-                        </p>
-                    </a>
-                    <a class="link_content_footer" href="#">
-                        <p class="text_block_footer">
                             Рассчитать стоимость
-                        </p>
-                    </a>
-                    <a class="link_content_footer" href="#">
-                        <p class="text_block_footer">
-                            Доставка от склада в Москве до двери
                         </p>
                     </a>
                 </div>
