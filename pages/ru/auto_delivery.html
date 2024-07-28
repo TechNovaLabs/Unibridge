@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/cost_calculation.css">
+    <link rel="shortcut icon" href="../../img/logo.png">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <title>UNIBRIDGE - Доставка из Китая</title>
+</head>
+
+<body>
+    <div class="main_container"> <!--Главный контейнер для наполнения -->
+        <div class="header_top"> <!--Верх шапки сайта-->
+            <div class="top_nav"> <!--Верхняя навигационная панель-->
+                <div class="logo_block">
+                    <a href="../../index.html" class="home_page">
+                        <img class="img_logo" src="../../img/logo.png" alt="">
+                        <h1 class="text_logo">UNIBRIDGE</h1>
+                    </a>
+                    <div class="telegram_link_block">
+                        <a class="telegram_link" href="#">
+                            <img class="telegram_logo_img" src="../../img/telegram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="order_a_call">
+                    <div class="link_order">
+                        <a class="link_call" href="#">
+                            <p class="text_link_order_call">Заказать звонок</p>
+                        </a>
+                        <div class="elips">
+                            <img class="call_arrow_right" src="../../img/Arrow_right.png" alt="">
+                        </div>
+                    </div>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p class="txt_application">Оставьте заявку</p>
+                            <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                            <div class="info_modal_window">
+                                <p class="txt_info_modal_window"> Имя</p>
+                                <input type="text" id="name" name="name" placeholder="Иван">
+                                <p class="txt_info_modal_window"> Телефон</p>
+                                <input type="text" id="phone" name="phone" placeholder="+7 (999) - 99 - 99">
+                                <p class="txt_info_modal_window"> E-mail</p>
+                                <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                                <p class="hint_for_application">* заполните хотя бы 1 поле</p>
+                            </div>
+                            <button class="submit-btn">Оставьте заявку</button>
+                        </div>
+                    </div>
+                    <script src="../../js/modal_window.js"></script>
+                    <div class="phone_number">
+                        <p class="text_phone_number">
+                            +7 (999) 999 99 99 <br>
+                            +7 (999) 999 99 99
+                        </p>
+                    </div>
+                </div>
+                <div class="read_about_us">
+                    <div class="block_about_us">
+                        <a class="link_about_us" href="#">
+                            <p class="text_about_us">Читайте о нас</p>
+                            <img class="img_about_us" src="../../img/telegram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="language">
+                    <a class="language_ru" href="#1">
+                        RU
+                    </a>
+                    <a class="language_en" href="#2">
+                        EN /
+                    </a>
+                    <a class="language_cn" href="#3">
+                        CN /
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="line_header">
+        <div class="header_centre"> <!-- Центр шапки сайта -->
+            <div class="navigations_link"> <!-- ВАЖНО! Функционал не доделан, это пока заглушки -->
+                <div class="dropdown">
+                    <a class="plug" href="#">
+                        Доставка
+                        <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="../../pages/ru/gd_delivery.html">Ж/Д доставка</a>
+                        <a href="../../pages/ru/auto_delivery.html">Авто доставка</a>
+                        <a href="../../pages/ru/avia_delivery.html">Авиа доставка</a>
+                        <a href="../../pages/ru/express_delivery.html">Экспресс доставка</a>
+                        <a href="#">Доставка образцов</a>
+                        <a href="#">Доставка спец грузов и техники</a>
+                        <a href="#">Сборные грузы</a>
+                        <a href="#">Подобрать доставку</a>
+                        <a href="#">Склады приема грузов в Китае (наши склады в Китае)</a>
+                    </div>
+                </div>
+                <a class="plug" href="#">
+                    Оплата в Китай
+                    <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                </a>
+                <div class="dropdown"> <!-- Добавлен блок для "Маркетплейсам" -->
+                    <a class="plug" href="#">
+                        Маркетплейсам
+                        <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="../../pages/ru/purchase_lots.html">Выкуп малых и крупных партий</a> <!-- Добавлена ссылка 1 -->
+                        <a href="#">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
+                        <a href="#">Проверка качества выкупленного товара</a> <!-- Добавлена ссылка 3 -->
+                        <a href="#">Готовые решения (популярные товары)</a> <!-- Добавлена ссылка 1 -->
+                        <a href="#">Консолидация посылок</a> <!-- Добавлена ссылка 2 -->
+                        <a href="#">Упаковка</a> <!-- Добавлена ссылка 3 -->
+                    </div>
+                </div>
+                <div class="dropdown"> <!-- Добавлен блок для "Все услуги" -->
+                    <a class="plug" href="#">
+                        Все услуги
+                        <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="#">Выкуп товара у фабрик</a> <!-- Добавлена ссылка 1 -->
+                        <a href="#">Выкуп товара с таобао, 1688</a> <!-- Добавлена ссылка 2 -->
+                        <a href="#">Оплаты поставщикам</a> <!-- Добавлена ссылка 3 -->
+                        <a href="#">Аудит поставщиков</a> <!-- Добавлена ссылка 1 -->
+                        <a href="#">Инспекция на фабрике</a> <!-- Добавлена ссылка 2 -->
+                        <a href="#">Проверка качества на нашем складе</a> <!-- Добавлена ссылка 3 -->
+                        <a href="#">Консультации по доставке</a> <!-- Добавлена ссылка 1 -->
+                        <a href="#">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
+                        <a href="#">Возврат китайского НДС</a> <!-- Добавлена ссылка 3 -->
+                        <a href="#">Рассчитать стоимость</a> <!-- Добавлена ссылка 2 -->
+                    </div>
+                </div>
+                <div class="dropdown"> <!-- Добавлен блок для "О нас" -->
+                    <a class="plug" href="#">
+                        О нас
+                        <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="#">Контакты</a> <!-- Добавлена ссылка 1 -->
+                        <a href="#">О компании</а> <!-- Добавлена ссылка 2 -->
+                            <a href="#">Вакансии</a> <!-- Добавлена ссылка 3 -->
+                            <a href="#">FAQ</a> <!-- Добавлена ссылка 3 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/drop_down_list.js"></script>
+        <hr class="line_header">
+        <div class="header_bottom"> <!--Настройка нижней части шапки сайта-->
+            <div class="bottom_link">
+                <a id="bottom_link" href="../../pages/ru/express_delivery.html#container_calculator">
+                    <p class="text_bottom_link">Рассчитать стоимость</p>
+                </a>
+            </div>
+            <div class="bottom_link">
+                <a id="bottom_link" href="">
+                    <p class="text_bottom_link">Отследить доставку</p>
+                </a>
+            </div>
+            <div class="bottom_link">
+                <a id="bottom_link" href="">
+                    <p class="text_bottom_link">Заключить договор</p>
+                </a>
+            </div>
+            <div class="bottom_link">
+                <a id="bottom_link" href="">
+                    <p class="text_bottom_link">Обратная связь</p>
+                </a>
+            </div>
+        </div>
+        <div class="banner_main_page" id="auto_delivery"> <!--Основное наполнение для банера-->
+            <h1 class="text_logo_banner_main_page">
+                Авто доставка
+            </h1>
+            <p class="text_banner_main_page">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
+                Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae
+                mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
+            </p>
+            <div class="delivery_order_a_call">
+                <a href="" class="link_order_a_call">
+                    <p class="txt_order_a_call">
+                        Заказать доставку
+                    </p>
+                </a>
+                <div class="elips_order_a_call">
+                    <img src="../../img/Arrow_right.png" alt="" class="img_order_a_call">
+                </div>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p class="txt_application">Оставьте заявку</p>
+                    <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                    <div class="info_modal_window">
+                        <p class="txt_info_modal_window"> Имя</p>
+                        <input type="text" id="name" name="name" placeholder="Иван">
+                        <p class="txt_info_modal_window"> Телефон</p>
+                        <input type="text" id="phone" name="phone" placeholder="+7 (999) - 99 - 99">
+                        <p class="txt_info_modal_window"> E-mail</p>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                        <p class="hint_for_application">* заполните хотя бы 1 поле</p>
+                    </div>
+                    <button class="submit-btn">Оставьте заявку</button>
+                </div>
+            </div>
+            <script src="../../js/modal_window_order_a_call.js"></script>
+        </div>
+        <div class="container_advantage_work_us">
+            <p class="advantage_work_us">
+                Преимущества работы с нами:
+            </p>
+            <div class="block_advantage_work_us">
+                <img class="img_advantage_work_us" src="../../img/Calendar.png" alt="">
+                <p class="txt_head_advantage_work_us">
+                    Оптимальная доставка
+                </p>
+                <p class="txt_bottom_advantage_work_us">
+                    По сроку и стоиомсти
+                </p>
+            </div>
+            <div class="block_advantage_work_us">
+                <img class="img_advantage_work_us" src="../../img/Garage.png" alt="">
+                <p class="txt_head_advantage_work_us">
+                    Собственные склады
+                </p>
+                <p class="txt_bottom_advantage_work_us">
+                    В России и Китае
+                </p>
+            </div>
+            <div class="block_advantage_work_us">
+                <img class="img_advantage_work_us" src="../../img/Weigher.png" alt="">
+                <p class="txt_head_advantage_work_us">
+                    Без ограничений по весу
+                </p>
+                <p class="txt_bottom_advantage_work_us">
+                    Количеству и габаритах груза
+                </p>
+            </div>
+        </div>
+        <div class="container_calculator">
+            <p class="txt_calculator">
+                рассчитать стоимость
+            </p>
+            <div class="content_container_calculator">
+                <div class="cost_calculation">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label for="package">Наименование посылки</label>
+                            <select id="package" onchange="showWarehouse()">
+                                <option value="" selected disabled>Выберите...</option>
+                                <option value="toys">Игрушки</option>
+                                <option value="electronics">Электроника</option>
+                            </select>
+                        </div>
+                        <div class="input-item" id="warehouse-container">
+                            <label for="warehouse">Склад отправления</label>
+                            <select id="warehouse">
+                                <option value="" selected disabled>Выберите...</option>
+                                <option value="guangzhou">Гуанчжоу</option>
+                                <option value="yiwu">Иу</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label for="length">Длина, СМ</label>
+                            <input type="number" id="length" placeholder="000">
+                        </div>
+                        <div class="input-item">
+                            <label for="width">Ширина, СМ</label>
+                            <input type="number" id="width" placeholder="000">
+                        </div>
+                        <div class="input-item">
+                            <label for="height">Высота, СМ</label>
+                            <input type="number" id="height" placeholder="000">
+                        </div>
+                        <div class="input-item">
+                            <label for="weight">Вес, КГ</label>
+                            <input type="number" id="weight" placeholder="000">
+                        </div>
+                    </div>
+
+                    <div class="result-group">
+                        <div class="result-item">
+                            <input type="radio" id="express" name="delivery" value="express"
+                                onchange="highlightSelected('express')">
+                            <label for="express">Экспресс:</label>
+                            <p id="express-cost">0.00р - 0 дн.</p>
+                        </div>
+                        <div class="result-item">
+                            <input type="radio" id="railway" name="delivery" value="railway"
+                                onchange="highlightSelected('railway')">
+                            <label for="railway">ЖД:</label>
+                            <p id="railway-cost">0.00р - 0 дн.</p>
+                        </div>
+                        <div class="result-item">
+                            <input type="radio" id="auto" name="delivery" value="auto"
+                                onchange="highlightSelected('auto')">
+                            <label for="auto">Авто:</label>
+                            <p id="auto-cost">0.00р - 0 дн.</p>
+                        </div>
+                        <div class="result-item">
+                            <input type="radio" id="avia" name="delivery" value="avia"
+                                onchange="highlightSelected('avia')">
+                            <label for="avia">Авиа:</label>
+                            <p id="avia-cost">0.00р - 0 дн.</p>
+                        </div>
+                    </div>
+
+                    <p class="txt_price_city">Цена рассчитывается до Москвы.</p>
+                    <p class="txt_calculation_sanding">Для расчёта стоимости отправки в регионы обратитесь к Российским
+                        транспортным компаниям:</p>
+                    <div class="links-group">
+                        <a href="https://www.jde.ru/online/calculator.html" target="_blank">ЖелДор </a>
+                        <a href="https://baikalasia.ru/raschet-stoimosti-dostavki/" target="_blank">БайкалЭкспресс</a>
+                        <a href="https://www.cdek.ru/ru/cabinet/calculate/?utm_referrer=https%3A%2F%2Fwww.google.com%2F"
+                            target="_blank">СДЭК</a>
+                        <a href="https://lk.boxberry.ru/lpip/" target="_blank">Боксберри</a>
+                        <a href="https://www.pochta.ru/Parcels?addressFrom=0c5b2444-70a0-4932-980c-b4dc0d3f02b5"
+                            target="_blank">Почта РФ</a>
+                    </div>
+
+                    <div class="buttons-group">
+                        <button id="calculate-button">Посчитать</button>
+                        <button>Заказать доставку</button>
+                    </div>
+                </div>
+                <div class="info_calculate">
+                    <div class="package_size">
+                        <p class="text_size">
+                            Ваша посылка:
+                        </p>
+                        <img src="../../img/s_korob.png" alt="" class="img_size">
+                        <p class="name_size">
+                            Короб S
+                        </p>
+                        <p class="txt_package_size">
+                            31x25x38 см, до 12 кг
+                        </p>
+                    </div>
+                    <div class="info_size">
+                        <p class="text_info_size">
+                            Перевозки оптовых товаров
+                        </p>
+                        <p class="text_party_size">
+                            Оформите перевозку крупной партии оптовых товаров онлайн
+                        </p>
+                        <img src="../../img/korob_party.png" alt="" class="img_korob_party">
+                    </div>
+                    <div class="insurance_package">
+                        <p class="text_top_insurance_package">
+                            Застрахуйте свою посылку
+                        </p>
+                        <p class="text_bottom_insurance_package">
+                            И будьте спокойны за её сохранность
+                        </p>
+                        <img src="../../img/security.png" alt="" class="img_insurance_package">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/calculation.js"></script>
+        <p class="txt_top_service_restriction">
+            ОГРАНИЧЕНИЯ ПО УСЛУГЕ
+        </p>
+
+        <div class="service_restriction">
+            <div class="content_service_resrtiction">
+                <div class="info_service_resrtriction">
+                    <a href="#" data-target="dropdown1" class="link_info_service_restriction">
+                        <p class="txt_link_info_service_restriction">Вес</p>
+                        <img src="../../img/Alt_Arrow_Down_black.png" alt="" class="img_link_info_service_restriction">
+                    </a>
+                    <div id="dropdown1" class="dropdown_info_service_restriction">
+                        <p class="txt_top_dropdown_info_service_restriction">Сроки доставки</p>
+                        <p class="bottom_dropdown_info_service_resrtriction">
+                            По основным направлениям средний срок экспресс доставки — 1 рабочий день. Срок доставки
+                            зависит от времени размещения заказа и передачи отправления курьеру. Узнать о сроке доставки
+                            по вашему направлению можно на странице расчета стоимости доставки.
+                        </p>
+                    </div>
+
+                    <a href="#" data-target="dropdown2" class="link_info_service_restriction">
+                        <p class="txt_link_info_service_restriction">Сроки доставки</p>
+                        <img src="../../img/Alt_Arrow_Down_black.png" alt="" class="img_link_info_service_restriction">
+                    </a>
+                    <div id="dropdown2" class="dropdown_info_service_restriction">
+                        <p class="txt_top_dropdown_info_service_restriction">Сроки доставки</p>
+                        <p class="bottom_dropdown_info_service_resrtriction">
+                            По основным направлениям средний срок экспресс доставки — 1 рабочий день. Срок доставки
+                            зависит от времени размещения заказа и передачи отправления курьеру. Узнать о сроке доставки
+                            по вашему направлению можно на странице расчета стоимости доставки.
+                        </p>
+                    </div>
+
+                    <a href="#" data-target="dropdown3" class="link_info_service_restriction">
+                        <p class="txt_link_info_service_restriction">Вес</p>
+                        <img src="../../img/Alt_Arrow_Down_black.png" alt="" class="img_link_info_service_restriction">
+                    </a>
+                    <div id="dropdown3" class="dropdown_info_service_restriction">
+                        <p class="txt_top_dropdown_info_service_restriction">Сроки доставки</p>
+                        <p class="bottom_dropdown_info_service_resrtriction">
+                            По основным направлениям средний срок экспресс доставки — 1 рабочий день. Срок доставки
+                            зависит от времени размещения заказа и передачи отправления курьеру. Узнать о сроке доставки
+                            по вашему направлению можно на странице расчета стоимости доставки.
+                        </p>
+                    </div>
+
+                    <a href="#" data-target="dropdown4" class="link_info_service_restriction">
+                        <p class="txt_link_info_service_restriction">Габариты/вес</p>
+                        <img src="../../img/Alt_Arrow_Down_black.png" alt="" class="img_link_info_service_restriction">
+                    </a>
+                    <div id="dropdown4" class="dropdown_info_service_restriction">
+                        <p class="txt_top_dropdown_info_service_restriction">Сроки доставки</p>
+                        <p class="bottom_dropdown_info_service_resrtriction">
+                            По основным направлениям средний срок экспресс доставки — 1 рабочий день. Срок доставки
+                            зависит от времени размещения заказа и передачи отправления курьеру. Узнать о сроке доставки
+                            по вашему направлению можно на странице расчета стоимости доставки.
+                        </p>
+                    </div>
+
+                    <a href="#" data-target="dropdown5" class="link_info_service_restriction">
+                        <p class="txt_link_info_service_restriction">Доставка опасных грузов</p>
+                        <img src="../../img/Alt_Arrow_Down_black.png" alt="" class="img_link_info_service_restriction">
+                    </a>
+                    <div id="dropdown5" class="dropdown_info_service_restriction">
+                        <p class="txt_top_dropdown_info_service_restriction">Сроки доставки</p>
+                        <p class="bottom_dropdown_info_service_resrtriction">
+                            По основным направлениям средний срок экспресс доставки — 1 рабочий день. Срок доставки
+                            зависит от времени размещения заказа и передачи отправления курьеру. Узнать о сроке доставки
+                            по вашему направлению можно на странице расчета стоимости доставки.
+                        </p>
+                    </div>
+
+                    <a href="#" data-target="dropdown6" class="link_info_service_restriction">
+                        <p class="txt_link_info_service_restriction">Оплата</p>
+                        <img src="../../img/Alt_Arrow_Down_black.png" alt="" class="img_link_info_service_restriction">
+                    </a>
+                    <div id="dropdown6" class="dropdown_info_service_restriction">
+                        <p class="txt_top_dropdown_info_service_restriction">Сроки доставки</p>
+                        <p class="bottom_dropdown_info_service_resrtriction">
+                            По основным направлениям средний срок экспресс доставки — 1 рабочий день. Срок доставки
+                            зависит от времени размещения заказа и передачи отправления курьеру. Узнать о сроке доставки
+                            по вашему направлению можно на странице расчета стоимости доставки.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image_service_restriction"></div>
+            </div>
+        </div>
+        <script src="../../js/dropdown_service_restruction.js"></script>
+    </div>
+    <div class="footer">
+        <div class="navigations_footer">
+            <div class="block_footer_1">
+                <p class="text_name_footer">
+                    Карта сайта
+                </p>
+                <button id="toggleButton" class="button_footer"><img class="img_btn_footer"
+                        src="../../img/Alt Arrow Down.png" alt=""></button>
+            </div>
+            <div class="block_footer_2">
+                <p class="txt_number_footer">
+                    +7 (999) 999 99 99
+                </p>
+                <img class="line_footer" src="../../img/Line 1.png" alt="">
+                <p class="txt_number_footer">
+                    +7 (999) 999 99 99
+                </p>
+            </div>
+            <div class="block_footer_3">
+                <p class="text_connection_footer">
+                    Пишите нам в чат:
+                </p>
+                <a href="#" class="link_footer">
+                    <img class="img_connection_footer" src="../../img/telegram_footer.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content_footer">
+            <div class="delivery">
+                <p class="name_block_footer">
+                    Доставка
+                </p>
+                <a class="link_content_footer" href="../../pages/ru/gd_delivery.html">
+                    <p class="text_block_footer">
+                        Ж/Д доставка
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/auto_delivery.html">
+                    <p class="text_block_footer">
+                        Авто доставка
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/avia_delivery.html">
+                    <p class="text_block_footer">
+                        Авиа доставка
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/express_delivery.html">
+                    <p class="text_block_footer">
+                        Экспресс доставка
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Доставка образцов
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Доставка спец грузов и техники
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Сборные грузы
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Подобрать доставку
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Склады приема грузов в Китае (наши склады в Китае)
+                    </p>
+                </a>
+            </div>
+            <div class="payment">
+                <p class="name_block_footer">
+                    Оплата в Китай
+                </p>
+            </div>
+            <div class="marketplace">
+                <p class="name_block_footer">
+                    Маркетплейсам
+                </p>
+                <a class="link_content_footer" href="../../pages/ru/purchase_lots.html">
+                    <p class="text_block_footer">
+                        Выкуп малых и крупных партий
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Свой бренд (ОЕМ)
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Проверка качества выкупленного товара
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Готовые решения (популярные товары)
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Консолидация посылок
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Упаковка
+                    </p>
+                </a>
+            </div>
+            <div class="all_services">
+                <p class="name_block_footer">
+                    Все услуги
+                </p>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Выкуп товара у фабрик
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Выкуп товара с таобао, 1688
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Оплаты поставщикам
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Аудит поставщиков
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Инспекция на фабрике
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Проверка качества на нашем складе
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Консультации по доставке
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Свой бренд (ОЕМ)
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Возврат китайского НДС
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Рассчитать стоимость
+                    </p>
+                </a>
+            </div>
+            <div class="footer_about_us">
+                <p class="name_block_footer">
+                    О нас
+                </p>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Контакты
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        О компании
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Вакансии
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        FAQ
+                    </p>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom_footer">
+            <div class="logo_footer">
+                <img class="img_logo_footer" src="../../img/logo.png" alt="">
+                <h1 class="text_logo_footer">UNIBRIDGE</h1>
+            </div>
+            <div class="personal_data">
+                <a href="#" class="link_personal_data">
+                    <p class="txt_libk_personal_data">
+                        Защита персональных данных
+                    </p>
+                </a>
+            </div>
+            <div class="copyrite_name_company">
+                <p class="txt_copyrite_name_company">
+                    © UNIBRIDGE 2024 Все права защищены
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/toggleButton.js"></script>
+    </div>
+</body>
+
+</html>
