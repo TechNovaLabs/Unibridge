@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <title>UNIBRIDGE - Доставка из Китая</title>
+</head>
+
+<body>
+    <div class="main_container"> <!--Главный контейнер для наполнения -->
+        <div class="header_top"> <!--Верх шапки сайта-->
+            <div class="top_nav"> <!--Верхняя навигационная панель-->
+                <div class="logo_block">
+                    <img class="img_logo" src="img/logo.png" alt="">
+                    <h1 class="text_logo">UNIBRIDGE</h1>
+                    <div class="telegram_link_block">
+                        <a class="telegram_link" href="#">
+                            <img class="telegram_logo_img" src="img/telegram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="order_a_call">
+                    <div class="link_order">
+                        <a class="link_call" id="index_header_link_call" href="#">
+                            <p class="text_link_order_call">Заказать звонок</p>
+                        </a>
+                        <div class="elips">
+                            <img class="call_arrow_right" src="img/Arrow_right.png" alt="">
+                        </div>
+                    </div>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="close">&times;</span>
+                            <p class="txt_application">Оставьте заявку</p>
+                            <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                            <div class="info_modal_window">
+                                <p class="txt_info_modal_window"> Имя</p>
+                                <input type="text" id="name" name="name" placeholder="Иван">
+                                <p class="txt_info_modal_window"> Телефон</p>
+                                <input type="text" id="phone" name="phone" placeholder="+7 (999) - 99 - 99">
+                                <p class="txt_info_modal_window"> E-mail</p>
+                                <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                                <p class="hint_for_application">* заполните хотя бы 1 поле</p>
+                            </div>
+                            <button class="submit-btn" id="index_header_button">Оставьте заявку</button>
+                        </div>
+                    </div>
+                    <div class="phone_number">
+                        <p class="text_phone_number">
+                            +7 (999) 999 99 99 <br>
+                            <i id="text_phone_number_mobile">+7 (999) 999 99 99</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="read_about_us">
+                    <div class="block_about_us">
+                        <a class="link_about_us" href="#">
+                            <p class="text_about_us">Читайте о нас</p>
+                            <img class="img_about_us" src="img/telegram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="language">
+                    <a class="language_ru" href="#1">
+                        RU
+                    </a>
+                    <a class="language_en" href="#2">
+                        EN /
+                    </a>
+                    <a class="language_cn" href="#3">
+                        CN /
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="line_header">
+        <div class="header_centre"> <!-- Центр шапки сайта -->
+            <div class="hamburger_menu"> <!-- Блок для гамбургер-меню -->
+                <div class="hamburger_icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="hamburger_content">
+                    <div class="dropdown">
+                        <a class="plug" href="#">Доставка</a>
+                        <div class="dropdown_content">
+                            <a href="pages/ru/gd_delivery.html">Ж/Д доставка</a>
+                            <a href="pages/ru/auto_delivery.html">Авто доставка</a>
+                            <a href="pages/ru/avia_delivery.html">Авиа доставка</a>
+                            <a href="pages/ru/express_delivery.html">Экспресс доставка</a>
+                            <a href="#">Доставка образцов</a>
+                            <a href="#">Доставка спец грузов и техники</a>
+                            <a href="#">Сборные грузы</a>
+                            <a href="#">Подобрать доставку</a>
+                            <a href="#">Склады приема грузов в Китае (наши склады в Китае)</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="plug" href="#">Оплата в Китай</a>
+                        <div class="dropdown_content">
+                            <!-- Ссылки для Оплата в Китай -->
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="plug" href="#">Маркетплейсам</a>
+                        <div class="dropdown_content">
+                            <a href="pages/ru/purchase_lots.html">Выкуп малых и крупных партий</a>
+                            <a href="pages/ru/oem.html">Свой бренд (ОЕМ)</a>
+                            <a href="#">Проверка качества выкупленного товара</a>
+                            <a href="#">Готовые решения (популярные товары)</a>
+                            <a href="pages/ru/cargo_consalidation.html">Консолидация посылок</a>
+                            <a href="pages/ru/order_the_packing.html">Упаковка</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="plug" href="#">Все услуги</a>
+                        <div class="dropdown_content">
+                            <a href="pages/ru/all_service.html">Выкуп товара у фабрик</a> <!-- Добавлена ссылка 1 -->
+                            <a href="pages/ru/all_service.html">Выкуп товара с таобао, 1688</a>
+                            <!-- Добавлена ссылка 2 -->
+                            <a href="pages/ru/all_service.html">Оплаты поставщикам</a> <!-- Добавлена ссылка 3 -->
+                            <a href="pages/ru/all_service.html">Аудит поставщиков</a> <!-- Добавлена ссылка 1 -->
+                            <a href="pages/ru/all_service.html#factory_inspection">Инспекция на фабрике</a>
+                            <!-- Добавлена ссылка 2 -->
+                            <a href="pages/ru/all_service.html#chek_inspection">Проверка качества на нашем складе</a>
+                            <!-- Добавлена ссылка 3 -->
+                            <a href="pages/ru/all_service.html#consultation_delivery_all_service">Консультации по
+                                доставке</a> <!-- Добавлена ссылка 1 -->
+                            <a href="pages/ru/oem.html">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
+                            <a href="pages/ru/all_service.html#refund_nds">Возврат китайского НДС</a>
+                            <!-- Добавлена ссылка 3 -->
+                            <a href="pages/ru/all_service.html#cost_calculation_all_service">Рассчитать стоимость</a>
+                            <!-- Добавлена ссылка 2 -->
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="plug" href="#">О нас</a>
+                        <div class="dropdown_content">
+                            <a href="#">Контакты</a>
+                            <a href="#">О компании</a>
+                            <a href="#">Вакансии</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigations_link"> <!-- ВАЖНО! Функционал не доделан, это пока заглушки -->
+                <div class="dropdown">
+                    <a class="plug" href="#">
+                        Доставка
+                        <img class="img_plug" src="img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="pages/ru/gd_delivery.html">Ж/Д доставка</a>
+                        <a href="pages/ru/auto_delivery.html">Авто доставка</a>
+                        <a href="pages/ru/avia_delivery.html">Авиа доставка</a>
+                        <a href="pages/ru/express_delivery.html">Экспресс доставка</a>
+                        <a href="#">Доставка образцов</a>
+                        <a href="#">Доставка спец грузов и техники</a>
+                        <a href="#">Сборные грузы</a>
+                        <a href="#">Подобрать доставку</a>
+                        <a href="#">Склады приема грузов в Китае (наши склады в Китае)</a>
+                    </div>
+                </div>
+                <a class="plug" href="#">
+                    Оплата в Китай
+                    <img class="img_plug" src="img/Alt Arrow Down.svg" alt="">
+                </a>
+                <div class="dropdown"> <!-- Добавлен блок для "Маркетплейсам" -->
+                    <a class="plug" href="#">
+                        Маркетплейсам
+                        <img class="img_plug" src="img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="pages/ru/purchase_lots.html">Выкуп малых и крупных партий</a>
+                        <!-- Добавлена ссылка 1 -->
+                        <a href="pages/ru/oem.html">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
+                        <a href="#">Проверка качества выкупленного товара</a> <!-- Добавлена ссылка 3 -->
+                        <a href="#">Готовые решения (популярные товары)</a> <!-- Добавлена ссылка 1 -->
+                        <a href="pages/ru/cargo_consalidation.html">Консолидация посылок</a> <!-- Добавлена ссылка 2 -->
+                        <a href="pages/ru/order_the_packing.html">Упаковка</a> <!-- Добавлена ссылка 3 -->
+                    </div>
+                </div>
+                <div class="dropdown"> <!-- Добавлен блок для "Все услуги" -->
+                    <a class="plug" href="#">
+                        Все услуги
+                        <img class="img_plug" src="img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="pages/ru/all_service.html">Выкуп товара у фабрик</a> <!-- Добавлена ссылка 1 -->
+                        <a href="pages/ru/all_service.html">Выкуп товара с таобао, 1688</a> <!-- Добавлена ссылка 2 -->
+                        <a href="pages/ru/all_service.html">Оплаты поставщикам</a> <!-- Добавлена ссылка 3 -->
+                        <a href="pages/ru/all_service.html">Аудит поставщиков</a> <!-- Добавлена ссылка 1 -->
+                        <a href="pages/ru/all_service.html#factory_inspection">Инспекция на фабрике</a>
+                        <!-- Добавлена ссылка 2 -->
+                        <a href="pages/ru/all_service.html#chek_inspection">Проверка качества на нашем складе</a>
+                        <!-- Добавлена ссылка 3 -->
+                        <a href="pages/ru/all_service.html#consultation_delivery_all_service">Консультации по
+                            доставке</a> <!-- Добавлена ссылка 1 -->
+                        <a href="pages/ru/oem.html">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
+                        <a href="pages/ru/all_service.html#refund_nds">Возврат китайского НДС</a>
+                        <!-- Добавлена ссылка 3 -->
+                        <a href="pages/ru/all_service.html#cost_calculation_all_service">Рассчитать стоимость</a>
+                        <!-- Добавлена ссылка 2 -->
+                    </div>
+                </div>
+                <div class="dropdown"> <!-- Добавлен блок для "О нас" -->
+                    <a class="plug" href="#">
+                        О нас
+                        <img class="img_plug" src="img/Alt Arrow Down.svg" alt="">
+                    </a>
+                    <div class="dropdown_content">
+                        <a href="#">Контакты</a> <!-- Добавлена ссылка 1 -->
+                        <a href="#">О компании</а> <!-- Добавлена ссылка 2 -->
+                            <a href="#">Вакансии</a> <!-- Добавлена ссылка 3 -->
+                            <a href="#">FAQ</a> <!-- Добавлена ссылка 3 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="line_header" id="line_header_top">
+        <div class="header_bottom"> <!--Настройка нижней части шапки сайта-->
+            <div class="bottom_link">
+                <a id="bottom_link" href="pages/ru/express_delivery.html#container_calculator">
+                    <p class="text_bottom_link">Рассчитать стоимость</p>
+                </a>
+            </div>
+            <div class="bottom_link">
+                <a id="bottom_link" href="">
+                    <p class="text_bottom_link">Отследить доставку</p>
+                </a>
+            </div>
+            <div class="bottom_link">
+                <a id="bottom_link" href="">
+                    <p class="text_bottom_link">Заключить договор</p>
+                </a>
+            </div>
+            <div class="bottom_link">
+                <a id="bottom_link" href="">
+                    <p class="text_bottom_link">Обратная связь</p>
+                </a>
+            </div>
+        </div>
+        <div class="banner_main_page"> <!--Основное наполнение для банера-->
+            <img id="banner" class="img_banner" src="img/banner_1.png" alt=""> <!--Изображение самого банера-->
+            <div id="link_banner_about_us" class="link_banner_about_us"> <!--Ссылка на кнопку сотрудничать-->
+                <a class="link_union_right" id="index_banner_union_right" href="">
+                    <img class="img_union" src="img/Union.png" alt="">
+                    <img class="img_union_right" src="img/Arrow_right.png" alt="">
+                    <p class="text_link_union">Сотрудничать</p>
+                </a>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <p class="txt_application">Оставьте заявку</p>
+                    <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                    <div class="info_modal_window">
+                        <p class="txt_info_modal_window"> Имя</p>
+                        <input type="text" id="name" name="name" placeholder="Иван">
+                        <p class="txt_info_modal_window"> Телефон</p>
+                        <input type="text" id="phone" name="phone" placeholder="+7 (999) - 99 - 99">
+                        <p class="txt_info_modal_window"> E-mail</p>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                        <p class="hint_for_application">* заполните хотя бы 1 поле</p>
+                    </div>
+                    <button class="submit-btn" id="index_banner_button">Оставьте заявку</button>
+                </div>
+            </div>
+            <div class="button_switch_banner">
+                <button class="active-button" id="btn_switch_1" onclick="changeImage(1)"></button>
+                <button class="inactive-button" id="btn_switch_2" onclick="changeImage(2)"></button>
+                <button class="inactive-button" id="btn_switch_3" onclick="changeImage(3)"></button>
+                <button class="inactive-button" id="btn_switch_4" onclick="changeImage(4)"></button>
+                <button class="inactive-button" id="btn_switch_5" onclick="changeImage(5)"></button>
+            </div>
+        </div>
+        <div class="link_naviagtions_service"> <!--Настройка ссылок для навигации по услугам-->
+            <div class="block_navigations">
+                <a class="link_block_navigations" href="pages/ru/express_delivery.html">
+                    <img src="img/time.png" alt="" class="image_navigations_service">
+                    <p class="text_navigations_service">Экспресс-доставка</p>
+                </a>
+            </div>
+            <div class="block_navigations">
+                <a class="link_block_navigations" href="#">
+                    <img src="img/for_marketplace.png" alt="" class="image_navigations_service">
+                    <p class="text_navigations_service">Для интернет-магазинов</p>
+                </a>
+            </div>
+            <div class="block_navigations">
+                <a class="link_block_navigations" href="#">
+                    <img src="img/Map Point Wave.png" alt="" class="image_navigations_service">
+                    <p class="text_navigations_service">Отследить груз</p>
+                </a>
+            </div>
+            <div class="block_navigations">
+                <a class="link_block_navigations" href="#">
+                    <img src="img/logistics-delivery-truck-in-movement-svgrepo-com 1.png" alt=""
+                        class="image_navigations_service">
+                    <p class="text_navigations_service">Аудит поставщика</p>
+                </a>
+            </div>
+            <div class="block_navigations">
+                <a class="link_block_navigations" href="#">
+                    <img src="img/Document.png" alt="" class="image_navigations_service">
+                    <p class="text_navigations_service">О компании</p>
+                </a>
+            </div>
+            <div class="block_navigations">
+                <a class="link_block_navigations" href="#">
+                    <img src="img/Suitcase.png" alt="" class="image_navigations_service">
+                    <p class="text_navigations_service">Партнёрам</p>
+                </a>
+            </div>
+        </div>
+        <div class="logical_operator"> <!-- Ваш логистический оператор -->
+            <div class="container_1">
+                <h1 class="text_logical_operator">Ваш логистический оператор</h1>
+                <div class="informations_of_service">
+                    <div class="locality">
+                        <p class="numbers_informations_of_service">
+                            40 000
+                        </p>
+                        <p class="text_numbers_informations_of_service">
+                            Населенных пунктов
+                        </p>
+                    </div>
+                    <div class="warehourse_area">
+                        <p class="numbers_informations_of_service">
+                            77 600
+                        </p>
+                        <p class="text_numbers_informations_of_service">
+                            Площадь складов и терминалов в кв.м
+                        </p>
+                    </div>
+                    <div class="express_center">
+                        <p class="numbers_informations_of_service">
+                            101
+                        </p>
+                        <p class="text_numbers_informations_of_service">
+                            Экспресс центр
+                        </p>
+                    </div>
+                    <div class="partner_point">
+                        <p class="numbers_informations_of_service">
+                            5 000
+                        </p>
+                        <p class="text_numbers_informations_of_service">
+                            Партнерских пунктов выдачи
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="informations_text_of_service"> <!-- Текстовая информация о сервисе -->
+                <div id="block_1" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Лицензия на услуги почтовой связи</p>
+                </div>
+                <div id="block_2" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Продление срока действия почтовой лицензии</p>
+                </div>
+                <div id="block_3" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Продление срока действия почтовой лицензии</p>
+                </div>
+                <div id="block_4" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Продление срока действия почтовой лицензии</p>
+                </div>
+                <div id="block_5" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Свидетельство о включении в реестр таможенных представителей
+                    </p>
+                </div>
+                <div id="block_6" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Свидетельство о включении в реестр таможенных представителей
+                    </p>
+                </div>
+                <div id="block_7" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Свидетельство о постановке на специальный учет Российской
+                        Государственной Пробирной Палаты</p>
+                </div>
+                <div id="block_8" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Сертификат ISO 9001:2015</p>
+                </div>
+                <div id="block_9" class="blok_informations_text_of_service">
+                    <img class="img_text_service" src="img/Ellipse 9.png" alt="">
+                    <p id="txt_1" class="txt_text_service">Регистрация в реестре операторов персональных данных за №
+                        77-15-003430</p>
+                </div>
+            </div>
+        </div>
+        <div class="easy_to_work"> <!-- Начать работать просто -->
+            <div class="text_easy_to_work">
+                <p class="txt_easy_to_work">
+                    НАЧАТЬ РАБОТАТЬ ПРОСТО
+                </p>
+            </div>
+            <div class="block_to_work">
+                <p class="txt_number_italic_1">
+                    <i id="txt_number_italic">1</i>
+                </p>
+                <p class="txt_block_to_work">
+                    Рассчитайте стоимость
+                </p>
+                <a class="link_to_work_1" href="pages/ru/express_delivery.html#container_calculator">
+                    <p class="txt_link_to_work">Калькулятор</p>
+                </a>
+            </div>
+            <div class="block_to_work">
+                <p class="txt_number_italic_2">
+                    <i id="txt_number_italic">2</i>
+                </p>
+                <p class="txt_block_to_work">
+                    Выберете упаковку
+                </p>
+                <a class="link_to_work_2" href="pages/ru/order_the_packing.html">
+                    <p class="txt_link_to_work">Выберете упаковку</p>
+                </a>
+            </div>
+            <div class="block_to_work">
+                <p class="txt_number_italic_3">
+                    <i id="txt_number_italic">3</i>
+                </p>
+                <p class="txt_block_to_work">
+                    Оставьте заявку
+                </p>
+                <a class="link_to_work_3" id="index_content_link_call" href="#">
+                    <p class="txt_link_to_work">Оставьте заявку</p>
+                </a>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <p class="txt_application">Оставьте заявку</p>
+                    <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                    <div class="info_modal_window">
+                        <p class="txt_info_modal_window"> Имя</p>
+                        <input type="text" id="name" name="name" placeholder="Иван">
+                        <p class="txt_info_modal_window"> Телефон</p>
+                        <input type="text" id="phone" name="phone" placeholder="+7 (999) - 99 - 99">
+                        <p class="txt_info_modal_window"> E-mail</p>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                        <p class="hint_for_application">* заполните хотя бы 1 поле</p>
+                    </div>
+                    <button class="submit-btn" id="index_content_button">Оставьте заявку</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_news">
+            <div class="header_news">
+                <p class="txt_header_news">НОВОСТИ</p>
+                <div class="watch">
+                    <a href="#" class="link_watch_all">
+                        <p class="txt_watch_all">Смотреть всё</p>
+                        <img src="img/Alt Arrow Right.png" alt="" class="img_watch_all">
+                    </a>
+                </div>
+            </div>
+            <div class="content_news">
+                <div id="block_news_1" class="block_news">
+                    <div class="images_news">
+                        <div class="date_news">
+                            <p class="txt_date_news">
+                                10.07.24
+                            </p>
+                        </div>
+                        <img class="img_news" src="img/Gallery.png" alt="">
+                    </div>
+                    <div class="text_news">
+                        <p class="headline_news">
+                            Заголовок, который может переноситься на другие строки
+                        </p>
+                        <p class="txt_news">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+                            urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue...
+                        </p>
+                    </div>
+                </div>
+                <div id="block_news_2" class="block_news">
+                    <div class="images_news">
+                        <div class="date_news">
+                            <p class="txt_date_news">
+                                11.07.24
+                            </p>
+                        </div>
+                        <img class="img_news" src="img/Gallery.png" alt="">
+                    </div>
+                    <div class="text_news">
+                        <p class="headline_news">
+                            Заголовок, который может переноситься на другие строки
+                        </p>
+                        <p class="txt_news">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+                            urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue...
+                        </p>
+                    </div>
+                </div>
+                <div id="block_news_3" class="block_news">
+                    <div class="images_news">
+                        <div class="date_news">
+                            <p class="txt_date_news">
+                                12.07.24
+                            </p>
+                        </div>
+                        <img class="img_news" src="img/Gallery.png" alt="">
+                    </div>
+                    <div class="text_news">
+                        <p class="headline_news">
+                            Заголовок, который может переноситься на другие строки
+                        </p>
+                        <p class="txt_news">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+                            urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue...
+                        </p>
+                    </div>
+                </div>
+                <div id="block_news_4" class="block_news">
+                    <div class="images_news">
+                        <div class="date_news">
+                            <p class="txt_date_news">
+                                13.07.24
+                            </p>
+                        </div>
+                        <img class="img_news" src="img/Gallery.png" alt="">
+                    </div>
+                    <div class="text_news">
+                        <p class="headline_news">
+                            Заголовок, который может переноситься на другие строки
+                        </p>
+                        <p class="txt_news">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+                            urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue...
+                        </p>
+                    </div>
+                </div>
+                <div id="block_news_5" class="block_news">
+                    <div class="images_news">
+                        <div class="date_news">
+                            <p class="txt_date_news">
+                                14.07.24
+                            </p>
+                        </div>
+                        <img class="img_news" src="img/Gallery.png" alt="">
+                    </div>
+                    <div class="text_news">
+                        <p class="headline_news">
+                            Заголовок, который может переноситься на другие строки
+                        </p>
+                        <p class="txt_news">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+                            urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue...
+                        </p>
+                    </div>
+                </div>
+                <div id="block_news_6" class="block_news">
+                    <div class="images_news">
+                        <div class="date_news">
+                            <p class="txt_date_news">
+                                15.07.24
+                            </p>
+                        </div>
+                        <img class="img_news" src="img/Gallery.png" alt="">
+                    </div>
+                    <div class="text_news">
+                        <p class="headline_news">
+                            Заголовок, который может переноситься на другие строки
+                        </p>
+                        <p class="txt_news">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+                            urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+                            Maecenas vitae mattis tellus. Nullam quis imperdiet augue...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="button_switch_news">
+                <button class="button-left" id="btn_news_left"><img class="img_button_news" src="img/button_left.png"
+                        alt=""></button>
+                <button class="button-right" id="btn_news_right"><img class="img_button_news" src="img/button_right.png"
+                        alt=""></button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="navigations_footer">
+                <div class="block_footer_1">
+                    <p class="text_name_footer">
+                        Карта сайта
+                    </p>
+                    <button id="toggleButton" class="button_footer"><img class="img_btn_footer"
+                            src="img/Alt Arrow Down.png" alt=""></button>
+                </div>
+                <div class="block_footer_2">
+                    <p class="txt_number_footer">
+                        +7 (999) 999 99 99
+                    </p>
+                    <img class="line_footer" src="img/Line 1.png" alt="">
+                    <p class="txt_number_footer">
+                        +7 (999) 999 99 99
+                    </p>
+                </div>
+                <div class="block_footer_3">
+                    <p class="text_connection_footer">
+                        Пишите нам в чат:
+                    </p>
+                    <a href="#" class="link_footer">
+                        <img class="img_connection_footer" src="img/telegram_footer.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="content_footer">
+                <div class="delivery">
+                    <p class="name_block_footer">
+                        Доставка
+                    </p>
+                    <a class="link_content_footer" href="pages/ru/gd_delivery.html">
+                        <p class="text_block_footer">
+                            Ж/Д доставка
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/auto_delivery.html">
+                        <p class="text_block_footer">
+                            Авто доставка
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/avia_delivery.html">
+                        <p class="text_block_footer">
+                            Авиа доставка
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/express_delivery.html">
+                        <p class="text_block_footer">
+                            Экспресс доставка
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Доставка образцов
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Доставка спец грузов и техники
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Сборные грузы
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Подобрать доставку
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Склады приема грузов в Китае (наши склады в Китае)
+                        </p>
+                    </a>
+                </div>
+                <div class="payment">
+                    <p class="name_block_footer">
+                        Оплата в Китай
+                    </p>
+                </div>
+                <div class="marketplace">
+                    <p class="name_block_footer">
+                        Маркетплейсам
+                    </p>
+                    <a class="link_content_footer" href="pages/ru/purchase_lots.html">
+                        <p class="text_block_footer">
+                            Выкуп малых и крупных партий
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/oem.html">
+                        <p class="text_block_footer">
+                            Свой бренд (ОЕМ)
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Проверка качества выкупленного товара
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Готовые решения (популярные товары)
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/cargo_consalidation.html">
+                        <p class="text_block_footer">
+                            Консолидация посылок
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/order_the_packing.html">
+                        <p class="text_block_footer">
+                            Упаковка
+                        </p>
+                    </a>
+                </div>
+                <div class="all_services">
+                    <p class="name_block_footer">
+                        Все услуги
+                    </p>
+                    <a class="link_content_footer" href="pages/ru/all_service.html">
+                        <p class="text_block_footer">
+                            Выкуп товара у фабрик
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html">
+                        <p class="text_block_footer">
+                            Выкуп товара с таобао, 1688
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html">
+                        <p class="text_block_footer">
+                            Оплаты поставщикам
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html">
+                        <p class="text_block_footer">
+                            Аудит поставщиков
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html#factory_inspection">
+                        <p class="text_block_footer">
+                            Инспекция на фабрике
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html#chek_inspection">
+                        <p class="text_block_footer">
+                            Проверка качества на нашем складе
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html#consultation_delivery_all_service">
+                        <p class="text_block_footer">
+                            Консультации по доставке
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/oem.html">
+                        <p class="text_block_footer">
+                            Свой бренд (ОЕМ)
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html#refund_nds">
+                        <p class="text_block_footer">
+                            Возврат китайского НДС
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="pages/ru/all_service.html#cost_calculation_all_service">
+                        <p class="text_block_footer">
+                            Рассчитать стоимость
+                        </p>
+                    </a>
+                </div>
+                <div class="footer_about_us">
+                    <p class="name_block_footer">
+                        О нас
+                    </p>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Контакты
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            О компании
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            Вакансии
+                        </p>
+                    </a>
+                    <a class="link_content_footer" href="#">
+                        <p class="text_block_footer">
+                            FAQ
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom_footer">
+                <div class="logo_footer">
+                    <img class="img_logo_footer" src="img/logo.png" alt="">
+                    <h1 class="text_logo_footer">UNIBRIDGE</h1>
+                </div>
+                <div class="personal_data">
+                    <a href="#" class="link_personal_data">
+                        <p class="txt_libk_personal_data">
+                            Защита персональных данных
+                        </p>
+                    </a>
+                </div>
+                <div class="copyrite_name_company">
+                    <p class="txt_copyrite_name_company">
+                        © UNIBRIDGE 2024 Все права защищены
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </div>
+</body>
+
+</html>
