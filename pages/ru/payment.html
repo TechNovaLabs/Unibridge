@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/cost_calculation.css">
+    <link rel="shortcut icon" href="../../img/logo.png">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <title>UNIBRIDGE - Доставка из Китая</title>
+</head>
+
+<body>
+    <div class="main_container"> <!--Главный контейнер для наполнения -->
+        <div class="header_top"> <!--Верх шапки сайта-->
+            <div class="top_nav"> <!--Верхняя навигационная панель-->
+                <div class="logo_block">
+                    <a href="../../index.html" class="home_page">
+                        <img class="img_logo" src="../../img/LOGO-1.svg" alt="">
+                    </a>
+                </div>
+                <div class="order_a_call">
+                    <div class="link_order">
+                        <a class="link_call" id="payment_header_link_call" href="#">
+                            <p class="text_link_order_call">Заказать звонок</p>
+                        </a>
+                        <div class="elips">
+                            <img class="call_arrow_right" src="../../img/Arrow_right.png" alt="">
+                        </div>
+                    </div>
+                    <div id="modal-header" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="close-header">&times;</span>
+                            <p id="success-message-header">Заявка успешно отправлена!</p>
+                            <button id="close-success-message-header">Ок</button>
+                            <div class="info_modal_window" id="form-header">
+                                <p class="txt_application">Оставьте заявку</p>
+                                <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                                <p class="txt_info_modal_window" id="txt_name_info_modal_window"> Имя</p>
+                                <input type="text" id="name-header" name="name" placeholder="Иван">
+                                <p class="txt_info_modal_window"> Телефон *</p>
+                                <input type="text" id="phone-header" name="phone" placeholder="+7 (999) - 99 - 99">
+                                <p class="txt_info_modal_window"> E-mail * </p>
+                                <input type="email" id="email-header" name="email" placeholder="example@mail.ru">
+                                <p class="hint_for_application">* заполните обязательные поля</p>
+                                <button class="submit-btn" id="all_service_header_button">Оставьте заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone_number">
+                        <p class="text_phone_number">
+                            +7 (999) 999 99 99 <br>
+                            +7 (999) 999 99 99
+                        </p>
+                    </div>
+                </div>
+                <div class="read_about_us">
+                    <div class="block_about_us">
+                        <a class="link_about_us" href="#">
+                            <p class="text_about_us">Наш канал</p>
+                            <img class="img_about_us" src="../../img/telegram-svgrepo-com.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="language">
+                    <a class="language_ru" href="#1">
+                        RU
+                    </a>
+                    <a class="language_en" href="#2">
+                        EN /
+                    </a>
+                    <a class="language_cn" href="#3">
+                        CN /
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="line_header"> -->
+        <div class="header_centre"> <!-- Центр шапки сайта -->
+            <div class="hamburger_menu"> <!-- Блок для гамбургер-меню -->
+                <div class="hamburger_icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="hamburger_content">
+                    <div class="dropdown">
+                        <a class="plug" href="#">Доставка</a>
+                        <div class="dropdown_content">
+                            <a href="../../pages/ru/auto_delivery.html">Авто доставка</a>
+                            <a href="../../pages/ru/avia_delivery.html">Авиа доставка</a>
+                            <a href="../../pages/ru/gd_delivery.html">Ж/Д доставка</a>
+                            <a href="../../pages/ru/express_delivery.html">Экспресс доставка</a>
+                        </div>
+                    </div>
+                    <a class="plug" href="../ru/payment.html">Оплата в Китай</a>
+                    <div class="dropdown">
+                        <a class="plug" href="#">Маркетплейсам</a>
+                        <div class="dropdown_content">
+                            <a href="../../pages/ru/purchase_lots.html">Выкуп малых и крупных партий</a>
+                            <a href="../../pages/ru/oem.html">Свой бренд (ОЕМ)</a>
+                            <a href="../../pages/ru/cargo_consalidation.html">Консолидация посылок</a>
+                            <a href="../../pages/ru/order_the_packing.html">Упаковка</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="plug" href="#">Все услуги</a>
+                        <div class="dropdown_content">
+                            <a href="../../pages/ru/b2b.html">b2b</a> <!-- Добавлена ссылка 1 -->
+                            <a href="../../pages/ru/all_service.html">Выкуп товара</a>
+                        </div>
+                    </div>
+                    <a class="plug" href="../ru/from_us.html">О нас</a>
+                    <a class="plug" href="../ru/express_delivery.html#container_calculator">Расчитать стоимость</a>
+                    <a class="plug" href="#">Отследить доставку</a>
+                </div>
+            </div>
+            <div class="navigations_link"> <!-- ВАЖНО! Функционал не доделан, это пока заглушки -->
+                <div class="navigations_left">
+                    <div class="dropdown">
+                        <a class="plug" href="#">
+                            Доставка
+                            <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                        </a>
+                        <div class="dropdown_content">
+                            <a href="../../pages/ru/auto_delivery.html">Авто доставка</a>
+                            <a href="../../pages/ru/avia_delivery.html">Авиа доставка</a>
+                            <a href="../../pages/ru/gd_delivery.html">Ж/Д доставка</a>
+                            <a href="../../pages/ru/express_delivery.html">Экспресс доставка</a>
+                        </div>
+                    </div>
+                    <a class="plug" href="../ru/payment.html">
+                        Оплата в Китай
+                    </a>
+                    <div class="dropdown"> <!-- Добавлен блок для "Маркетплейсам" -->
+                        <a class="plug" href="#">
+                            Маркетплейсам
+                            <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                        </a>
+                        <div class="dropdown_content">
+                            <a href="../../pages/ru/purchase_lots.html">Выкуп малых и крупных партий</a> <!-- Добавлена ссылка 1 -->
+                            <a href="../../pages/ru/oem.html">Свой бренд (ОЕМ)</a> <!-- Добавлена ссылка 2 -->
+                            <a href="../../pages/ru/cargo_consalidation.html">Консолидация посылок</a> <!-- Добавлена ссылка 2 -->
+                            <a href="../../pages/ru/order_the_packing.html">Упаковка</a> <!-- Добавлена ссылка 3 -->
+                        </div>
+                    </div>
+                    <div class="dropdown"> <!-- Добавлен блок для "Все услуги" -->
+                        <a class="plug" href="#">
+                            Все услуги
+                            <img class="img_plug" src="../../img/Alt Arrow Down.svg" alt="">
+                        </a>
+                        <div class="dropdown_content">
+                            <a href="../../pages/ru/b2b.html">b2b</a> <!-- Добавлена ссылка 1 -->
+                            <a href="../../pages/ru/all_service.html">Выкуп товара</a> <!-- Добавлена ссылка 2 -->
+                        </div>
+                    </div>
+                    <a class="plug" href="../ru/from_us.html">О нас</a>
+                </div>
+                <div class="navigations_right">
+                    <a class="plug" href="../ru/express_delivery.html#container_calculator">
+                        Расчитать стоимость
+                        <!-- <img class="img_plug" src="img/Alt Arrow Down.svg" alt=""> -->
+                    </a>
+                    <a class="plug" href="#">
+                        Отследить доставку
+                        <!-- <img class="img_plug" src="img/Alt Arrow Down.svg" alt=""> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="line_header" id="line_header_top"> -->
+        <div class="content_payment">
+            <div class="banner_payment">
+
+            </div>
+        </div>
+        <div class="centre_content_payment">
+            <p class="text_centre_content_payment">
+                Мы предлагаем гибкий подход к проведению платежей, что позволяет вам эффективно и удобно
+                взаимодействовать с вашими китайскими партнерами.
+            </p>
+        </div>
+        <div class="bottom_content_payment">
+            <div class="info_bottom_content_payment">
+                <img src="../../img/Ok.svg" alt="" class="img_info_bottom_content_payment">
+                <p class="text_info_bottom_content_payment">
+                    <b>Индивидуальный подход:</b> Мы учитываем особенности вашего бизнеса 
+                    и условия сделки, чтобы предложить оптимальный способ оплаты, соответствующий вашим требованиям.
+                </p>
+            </div>
+            <div class="info_bottom_content_payment">
+                <img src="../../img/Ok.svg" alt="" class="img_info_bottom_content_payment">
+                <p class="text_info_bottom_content_payment">
+                    <b>Разнообразие методов оплаты:</b> банковские переводы, электронные платежи и другие решения, которые могут быть удобны для вас и ваших поставщиков.
+                </p>
+            </div>
+            <div class="info_bottom_content_payment">
+                <img src="../../img/Ok.svg" alt="" class="img_info_bottom_content_payment">
+                <p class="text_info_bottom_content_payment">
+                    <b>Безопасность и надежность:</b> Мы обеспечиваем безопасность 
+                    и конфиденциальность при проведении платежей, минимизируя риски 
+                    и защищая ваши финансовые интересы.
+                </p>
+            </div>
+            <div class="info_bottom_content_payment">
+                <img src="../../img/Ok.svg" alt="" class="img_info_bottom_content_payment">
+                <p class="text_info_bottom_content_payment">
+                    <b>Сопровождение и консультации:</b> Наши специалисты помогут вам разобраться в нюансах процесса, обеспечат необходимую документацию 
+                    и поддержат на всех этапах осуществления платежа.
+                </p>
+            </div>
+            <div class="info_bottom_content_payment">
+                <img src="../../img/Ok.svg" alt="" class="img_info_bottom_content_payment">
+                <p class="text_info_bottom_content_payment">
+                    <b>Курс и комиссии:</b> конкурентные курсы валют и прозрачные комиссии,
+                    что позволяет вам оптимизировать затраты на международные переводы.
+                </p>
+            </div>
+            <button class="button_contact_us" id="button_contact_us_payment">
+                Оставить заявку
+            </button>
+        </div>
+    </div>
+    <div id="modal-content-purchase-lots" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-content-purchase-lots">&times;</span>
+            <p id="success-message-content-purchase-lots">Заявка успешно отправлена!</p>
+            <button id="close-success-message-content-purchase-lots">Ок</button>
+            <div class="info_modal_window" id="form-content-purchase-lots">
+                <p class="txt_application">Оставьте заявку</p>
+                <p class="call_me_back">И мы перезвоним Вам в течение 25 мин.</p>
+                <p class="txt_info_modal_window" id="txt_name_info_modal_window"> Имя</p>
+                <input type="text" id="name-content-purchase-lots" name="name" placeholder="Иван">
+                <p class="txt_info_modal_window"> Телефон *</p>
+                <input type="text" id="phone-content-purchase-lots" name="phone" placeholder="+7 (999) - 99 - 99">
+                <p class="txt_info_modal_window"> E-mail * </p>
+                <input type="email" id="email-content-purchase-lots" name="email" placeholder="example@mail.ru">
+                <p class="hint_for_application">* заполните обязательные поля</p>
+                <button class="submit-btn" id="payment_banner_button">Оставьте заявку</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer_purchase_lots">
+        <div class="navigations_footer">
+            <div class="block_footer_1">
+                <p class="text_name_footer">
+                    Карта сайта
+                </p>
+                <button id="toggleButton" class="button_footer"><img class="img_btn_footer"
+                        src="../../img/Alt Arrow Down.png" alt=""></button>
+            </div>
+            <div class="block_footer_2">
+                <p class="txt_number_footer">
+                    +7 (999) 999 99 99
+                </p>
+                <img class="line_footer" src="../../img/Line 1.png" alt="">
+                <p class="txt_number_footer">
+                    +7 (999) 999 99 99
+                </p>
+            </div>
+            <div class="block_footer_3">
+                <p class="text_connection_footer">
+                    Пишите нам в чат:
+                </p>
+                <a href="#" class="link_footer">
+                    <img class="img_connection_footer" src="../../img/telegram_footer.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content_footer">
+            <div class="delivery">
+                <p class="name_block_footer">
+                    Доставка
+                </p>
+                <a class="link_content_footer" href="../../pages/ru/gd_delivery.html">
+                    <p class="text_block_footer">
+                        Ж/Д доставка
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/auto_delivery.html">
+                    <p class="text_block_footer">
+                        Авто доставка
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/avia_delivery.html">
+                    <p class="text_block_footer">
+                        Авиа доставка
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/express_delivery.html">
+                    <p class="text_block_footer">
+                        Экспресс доставка
+                    </p>
+                </a>
+            </div>
+            <div class="payment">
+                <a class="link_content_footer" href="../../pages/ru/payment.html">
+                    <p class="text_block_footer">
+                        Оплата в Китай
+                    </p>
+                </a>
+            </div>
+            <div class="marketplace">
+                <p class="name_block_footer">
+                    Маркетплейсам
+                </p>
+                <a class="link_content_footer" href="../../pages/ru/purchase_lots.html">
+                    <p class="text_block_footer">
+                        Выкуп малых и крупных партий
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/oem.html">
+                    <p class="text_block_footer">
+                        Свой бренд (ОЕМ)
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/cargo_consalidation.html">
+                    <p class="text_block_footer">
+                        Консолидация посылок
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/order_the_packing.html">
+                    <p class="text_block_footer">
+                        Упаковка
+                    </p>
+                </a>
+            </div>
+            <div class="all_services">
+                <p class="name_block_footer">
+                    Все услуги
+                </p>
+                <a class="link_content_footer" href="../../pages/ru/b2b.html">
+                    <p class="text_block_footer">
+                        b2b
+                    </p>
+                </a>
+                <a class="link_content_footer" href="../../pages/ru/all_service.html">
+                    <p class="text_block_footer">
+                        Выкуп товара
+                    </p>
+                </a>
+            </div>
+            <div class="footer_about_us">
+                <p class="name_block_footer">
+                    О нас
+                </p>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Контакты
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        О компании
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        Вакансии
+                    </p>
+                </a>
+                <a class="link_content_footer" href="#">
+                    <p class="text_block_footer">
+                        FAQ
+                    </p>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom_footer">
+            <div class="logo_footer">
+                <img class="img_logo_footer" src="../../img/LOGO-2.svg" alt="">
+            </div>
+            <div class="personal_data">
+                <a href="#" class="link_personal_data">
+                    <p class="txt_libk_personal_data">
+                        Защита персональных данных
+                    </p>
+                </a>
+            </div>
+            <div class="copyrite_name_company">
+                <p class="txt_copyrite_name_company">
+                    © UNIBRIDGE 2024 Все права защищены
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/payment.js"></script>
+    </div>
+</body>
+
+</html>
